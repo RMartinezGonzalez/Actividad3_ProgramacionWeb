@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3 - Tooltips reutilizables</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tooltips reutilizables</h1>
+        <p>Martínez González Ricardo</p>
+        <p>Pasa el mouse sobre los botónes para ver los diferentes tooltips</p>
+    </header>
+    <div id="tooltip" class="tooltip-oculto"></div>
+    <main>
+            <button onmouseover="mostrarTooltip(this)" onmouseout="ocultarTooltip()" data-texto="Guardado con éxito" data-tipo="valido" class="boton">Guardar</button>
+            <button onmouseover="mostrarTooltip(this)" onmouseout="ocultarTooltip()" data-texto="Descarga ahora" data-tipo="info" class="boton">Info</button>
+            <button onmouseover="mostrarTooltip(this)" onmouseout="ocultarTooltip()" data-texto="Tenga cuidado con esta acción" data-tipo="advertencia" class="boton">Eliminar</button>
+            <button onmouseover="mostrarTooltip(this)" onmouseout="ocultarTooltip()" data-texto="¡ERROR!" data-tipo="error" class="boton">Error</button>
+            <button onmouseover="mostrarTooltip(this)" onmouseout="ocultarTooltip()" data-texto="Texto Generico" data-tipo="generico" class="boton">Genérico</button>
+            <button onmouseover="mostrarTooltip(this)" onmouseout="ocultarTooltip()" data-texto="Texto Generico 2" data-tipo="generico-2" class="boton">Genérico</button>
+    </main>
+
+</body>
+</html>
